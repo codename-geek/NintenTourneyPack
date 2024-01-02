@@ -1,0 +1,6953 @@
+title: Ninten Tourney Pack v1.5
+description: Combines PS2 Duck Flare mod and Cutscene Skipper from Num. Includes 3-Drive Start Toggle (Press R1 in Dream Weapon Selection to toggle it to 5 instead). Includes lua scripts to unequip all Berserk Charges and both Negative Combos if 2 are equipped.
+assets:
+# 3 Drive Lua Script and Remove Berserk/Double Neg Lua
+- name: scripts/z3-Drive-Mod.lua
+  method: copy
+  source:
+  - name: z3-Drive-Mod.lua
+- name: scripts/RemoveBerserkNegCombos.lua
+  method: copy
+  source:
+  - name: RemoveBerserkNegCombos.lua
+# PS2 Duck Flare
+- name: limit/us/donald2.bar
+  method: copy
+  source:
+  - name: limit/fm/donald2.bar
+    type: internal
+- name: limit/us/donald2_wi.bar
+  method: copy
+  source:
+  - name: limit/fm/donald2_wi.bar
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar0.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar0.dds
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar1.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar1.dds
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar2.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar2.dds
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar3.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar3.dds
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar4.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar4.dds
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar5.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar5.dds
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar6.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar6.dds
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar7.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar7.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar0.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar0.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar1.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar1.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar2.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar2.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar3.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar3.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar4.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar4.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar5.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar5.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar6.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar6.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar7.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar7.dds
+    type: internal
+# Cutscene Skipper
+- name: ard/al00.ard
+  multi:
+  - name: ard/us/al00.ard
+  - name: ard/fr/al00.ard
+  - name: ard/gr/al00.ard
+  - name: ard/it/al00.ard
+  - name: ard/sp/al00.ard
+  method: binarc
+  source:
+  - name: 101
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 102
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 105
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 106
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 108
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 113
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 212
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 210
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 103s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 106v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 107s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/al02.ard
+  multi:
+  - name: ard/us/al02.ard
+  - name: ard/fr/al02.ard
+  - name: ard/gr/al02.ard
+  - name: ard/it/al02.ard
+  - name: ard/sp/al02.ard
+  method: binarc
+  source:
+  - name: 103
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 107
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 112
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/al03.ard
+  multi:
+  - name: ard/us/al03.ard
+  - name: ard/fr/al03.ard
+  - name: ard/gr/al03.ard
+  - name: ard/it/al03.ard
+  - name: ard/sp/al03.ard
+  method: binarc
+  source:
+  - name: 104
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 114
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 115
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 117
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 207
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 117s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 117v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/al04.ard
+  multi:
+  - name: ard/us/al04.ard
+  - name: ard/fr/al04.ard
+  - name: ard/gr/al04.ard
+  - name: ard/it/al04.ard
+  - name: ard/sp/al04.ard
+  method: binarc
+  source:
+  - name: 116
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 201
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 302s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/al05.ard
+  multi:
+  - name: ard/us/al05.ard
+  - name: ard/fr/al05.ard
+  - name: ard/gr/al05.ard
+  - name: ard/it/al05.ard
+  - name: ard/sp/al05.ard
+  method: binarc
+  source:
+  - name: 208
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 209
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/al06.ard
+  multi:
+  - name: ard/us/al06.ard
+  - name: ard/fr/al06.ard
+  - name: ard/gr/al06.ard
+  - name: ard/it/al06.ard
+  - name: ard/sp/al06.ard
+  method: binarc
+  source:
+  - name: 203
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 206
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/al07.ard
+  multi:
+  - name: ard/us/al07.ard
+  - name: ard/fr/al07.ard
+  - name: ard/gr/al07.ard
+  - name: ard/it/al07.ard
+  - name: ard/sp/al07.ard
+  method: binarc
+  source:
+  - name: 109
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/al09.ard
+  multi:
+  - name: ard/us/al09.ard
+  - name: ard/fr/al09.ard
+  - name: ard/gr/al09.ard
+  - name: ard/it/al09.ard
+  - name: ard/sp/al09.ard
+  method: binarc
+  source:
+  - name: 151
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 152
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/al10.ard
+  multi:
+  - name: ard/us/al10.ard
+  - name: ard/fr/al10.ard
+  - name: ard/gr/al10.ard
+  - name: ard/it/al10.ard
+  - name: ard/sp/al10.ard
+  method: binarc
+  source:
+  - name: 110
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 111
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/al11.ard
+  multi:
+  - name: ard/us/al11.ard
+  - name: ard/fr/al11.ard
+  - name: ard/gr/al11.ard
+  - name: ard/it/al11.ard
+  - name: ard/sp/al11.ard
+  method: binarc
+  source:
+  - name: 205
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/al13.ard
+  multi:
+  - name: ard/us/al13.ard
+  - name: ard/fr/al13.ard
+  - name: ard/gr/al13.ard
+  - name: ard/it/al13.ard
+  - name: ard/sp/al13.ard
+  method: binarc
+  source:
+  - name: 153
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 154
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/al14.ard
+  multi:
+  - name: ard/us/al14.ard
+  - name: ard/fr/al14.ard
+  - name: ard/gr/al14.ard
+  - name: ard/it/al14.ard
+  - name: ard/sp/al14.ard
+  method: binarc
+  source:
+  - name: 204
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 251
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 252
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 253
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 254
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 255
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 256
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/al15.ard
+  multi:
+  - name: ard/us/al15.ard
+  - name: ard/fr/al15.ard
+  - name: ard/gr/al15.ard
+  - name: ard/it/al15.ard
+  - name: ard/sp/al15.ard
+  method: binarc
+  source:
+  - name: 202
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 202v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 502s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/bb00.ard
+  multi:
+  - name: ard/us/bb00.ard
+  - name: ard/fr/bb00.ard
+  - name: ard/gr/bb00.ard
+  - name: ard/it/bb00.ard
+  - name: ard/sp/bb00.ard
+  method: binarc
+  source:
+  - name: 101
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 124
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 117
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 202
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 204
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 210
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 211
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 204v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/bb01.ard
+  multi:
+  - name: ard/us/bb01.ard
+  - name: ard/fr/bb01.ard
+  - name: ard/gr/bb01.ard
+  - name: ard/it/bb01.ard
+  - name: ard/sp/bb01.ard
+  method: binarc
+  source:
+  - name: 102
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 103
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/bb02.ard
+  multi:
+  - name: ard/us/bb02.ard
+  - name: ard/fr/bb02.ard
+  - name: ard/gr/bb02.ard
+  - name: ard/it/bb02.ard
+  - name: ard/sp/bb02.ard
+  method: binarc
+  source:
+  - name: 104
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 116
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 201
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 212
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 104v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 104s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/bb03.ard
+  multi:
+  - name: ard/us/bb03.ard
+  - name: ard/fr/bb03.ard
+  - name: ard/gr/bb03.ard
+  - name: ard/it/bb03.ard
+  - name: ard/sp/bb03.ard
+  method: binarc
+  source:
+  - name: 114
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 115
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 207
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 209
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 208s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/bb04.ard
+  multi:
+  - name: ard/us/bb04.ard
+  - name: ard/fr/bb04.ard
+  - name: ard/gr/bb04.ard
+  - name: ard/it/bb04.ard
+  - name: ard/sp/bb04.ard
+  method: binarc
+  source:
+  - name: 118
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 205
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 206
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 206s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/bb05.ard
+  multi:
+  - name: ard/us/bb05.ard
+  - name: ard/fr/bb05.ard
+  - name: ard/gr/bb05.ard
+  - name: ard/it/bb05.ard
+  - name: ard/sp/bb05.ard
+  method: binarc
+  source:
+  - name: 122
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 123
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/bb06.ard
+  multi:
+  - name: ard/us/bb06.ard
+  - name: ard/fr/bb06.ard
+  - name: ard/gr/bb06.ard
+  - name: ard/it/bb06.ard
+  - name: ard/sp/bb06.ard
+  method: binarc
+  source:
+  - name: 213
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 216
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/bb08.ard
+  multi:
+  - name: ard/us/bb08.ard
+  - name: ard/fr/bb08.ard
+  - name: ard/gr/bb08.ard
+  - name: ard/it/bb08.ard
+  - name: ard/sp/bb08.ard
+  method: binarc
+  source:
+  - name: 105
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 106
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 107
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/bb09.ard
+  multi:
+  - name: ard/us/bb09.ard
+  - name: ard/fr/bb09.ard
+  - name: ard/gr/bb09.ard
+  - name: ard/it/bb09.ard
+  - name: ard/sp/bb09.ard
+  method: binarc
+  source:
+  - name: 208
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/bb10.ard
+  multi:
+  - name: ard/us/bb10.ard
+  - name: ard/fr/bb10.ard
+  - name: ard/gr/bb10.ard
+  - name: ard/it/bb10.ard
+  - name: ard/sp/bb10.ard
+  method: binarc
+  source:
+  - name: 110
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 110v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 110s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/bb11.ard
+  multi:
+  - name: ard/us/bb11.ard
+  - name: ard/fr/bb11.ard
+  - name: ard/gr/bb11.ard
+  - name: ard/it/bb11.ard
+  - name: ard/sp/bb11.ard
+  method: binarc
+  source:
+  - name: 108
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 109
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 111
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 109v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/bb12.ard
+  multi:
+  - name: ard/us/bb12.ard
+  - name: ard/fr/bb12.ard
+  - name: ard/gr/bb12.ard
+  - name: ard/it/bb12.ard
+  - name: ard/sp/bb12.ard
+  method: binarc
+  source:
+  - name: 112
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 113
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/bb13.ard
+  multi:
+  - name: ard/us/bb13.ard
+  - name: ard/fr/bb13.ard
+  - name: ard/gr/bb13.ard
+  - name: ard/it/bb13.ard
+  - name: ard/sp/bb13.ard
+  method: binarc
+  source:
+  - name: 214
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/bb14.ard
+  multi:
+  - name: ard/us/bb14.ard
+  - name: ard/fr/bb14.ard
+  - name: ard/gr/bb14.ard
+  - name: ard/it/bb14.ard
+  - name: ard/sp/bb14.ard
+  method: binarc
+  source:
+  - name: 119
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/bb15.ard
+  multi:
+  - name: ard/us/bb15.ard
+  - name: ard/fr/bb15.ard
+  - name: ard/gr/bb15.ard
+  - name: ard/it/bb15.ard
+  - name: ard/sp/bb15.ard
+  method: binarc
+  source:
+  - name: 215
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 301
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 302
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/ca00.ard
+  multi:
+  - name: ard/us/ca00.ard
+  - name: ard/fr/ca00.ard
+  - name: ard/gr/ca00.ard
+  - name: ard/it/ca00.ard
+  - name: ard/sp/ca00.ard
+  method: binarc
+  source:
+  - name: 101
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 202
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/ca01.ard
+  multi:
+  - name: ard/us/ca01.ard
+  - name: ard/fr/ca01.ard
+  - name: ard/gr/ca01.ard
+  - name: ard/it/ca01.ard
+  - name: ard/sp/ca01.ard
+  method: binarc
+  source:
+  - name: 102
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 103
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 104
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 203
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 204
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 215
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 104s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 202s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 204s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/ca02.ard
+  multi:
+  - name: ard/us/ca02.ard
+  - name: ard/fr/ca02.ard
+  - name: ard/gr/ca02.ard
+  - name: ard/it/ca02.ard
+  - name: ard/sp/ca02.ard
+  method: binarc
+  source:
+  - name: 105
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 106
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 106s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/ca03.ard
+  multi:
+  - name: ard/us/ca03.ard
+  - name: ard/fr/ca03.ard
+  - name: ard/gr/ca03.ard
+  - name: ard/it/ca03.ard
+  - name: ard/sp/ca03.ard
+  method: binarc
+  source:
+  - name: 111
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 119
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 122
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/ca04.ard
+  multi:
+  - name: ard/us/ca04.ard
+  - name: ard/fr/ca04.ard
+  - name: ard/gr/ca04.ard
+  - name: ard/it/ca04.ard
+  - name: ard/sp/ca04.ard
+  method: binarc
+  source:
+  - name: 117
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 121
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/ca05.ard
+  multi:
+  - name: ard/us/ca05.ard
+  - name: ard/fr/ca05.ard
+  - name: ard/gr/ca05.ard
+  - name: ard/it/ca05.ard
+  - name: ard/sp/ca05.ard
+  method: binarc
+  source:
+  - name: 118
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 205
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 207
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 208
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 212
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 213
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 216
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/ca06.ard
+  multi:
+  - name: ard/us/ca06.ard
+  - name: ard/fr/ca06.ard
+  - name: ard/gr/ca06.ard
+  - name: ard/it/ca06.ard
+  - name: ard/sp/ca06.ard
+  method: binarc
+  source:
+  - name: 206
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/ca07.ard
+  multi:
+  - name: ard/us/ca07.ard
+  - name: ard/fr/ca07.ard
+  - name: ard/gr/ca07.ard
+  - name: ard/it/ca07.ard
+  - name: ard/sp/ca07.ard
+  method: binarc
+  source:
+  - name: 120
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 121s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/ca08.ard
+  multi:
+  - name: ard/us/ca08.ard
+  - name: ard/fr/ca08.ard
+  - name: ard/gr/ca08.ard
+  - name: ard/it/ca08.ard
+  - name: ard/sp/ca08.ard
+  method: binarc
+  source:
+  - name: 126
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 125
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/ca09.ard
+  multi:
+  - name: ard/us/ca09.ard
+  - name: ard/fr/ca09.ard
+  - name: ard/gr/ca09.ard
+  - name: ard/it/ca09.ard
+  - name: ard/sp/ca09.ard
+  method: binarc
+  source:
+  - name: 114
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 115
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 316s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/ca10.ard
+  multi:
+  - name: ard/us/ca10.ard
+  - name: ard/fr/ca10.ard
+  - name: ard/gr/ca10.ard
+  - name: ard/it/ca10.ard
+  - name: ard/sp/ca10.ard
+  method: binarc
+  source:
+  - name: 123
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 124
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 201
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/ca11.ard
+  multi:
+  - name: ard/us/ca11.ard
+  - name: ard/fr/ca11.ard
+  - name: ard/gr/ca11.ard
+  - name: ard/it/ca11.ard
+  - name: ard/sp/ca11.ard
+  method: binarc
+  source:
+  - name: 209
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/ca14.ard
+  multi:
+  - name: ard/us/ca14.ard
+  - name: ard/fr/ca14.ard
+  - name: ard/gr/ca14.ard
+  - name: ard/it/ca14.ard
+  - name: ard/sp/ca14.ard
+  method: binarc
+  source:
+  - name: 210
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 211
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 212s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/ca17.ard
+  multi:
+  - name: ard/us/ca17.ard
+  - name: ard/fr/ca17.ard
+  - name: ard/gr/ca17.ard
+  - name: ard/it/ca17.ard
+  - name: ard/sp/ca17.ard
+  method: binarc
+  source:
+  - name: 113
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 116
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 116v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 516s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/ca23.ard
+  multi:
+  - name: ard/us/ca23.ard
+  - name: ard/fr/ca23.ard
+  - name: ard/gr/ca23.ard
+  - name: ard/it/ca23.ard
+  - name: ard/sp/ca23.ard
+  method: binarc
+  source:
+  - name: 109
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 111s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/ca24.ard
+  multi:
+  - name: ard/us/ca24.ard
+  - name: ard/fr/ca24.ard
+  - name: ard/gr/ca24.ard
+  - name: ard/it/ca24.ard
+  - name: ard/sp/ca24.ard
+  method: binarc
+  source:
+  - name: 107
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 214
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/ca25.ard
+  multi:
+  - name: ard/us/ca25.ard
+  - name: ard/fr/ca25.ard
+  - name: ard/gr/ca25.ard
+  - name: ard/it/ca25.ard
+  - name: ard/sp/ca25.ard
+  method: binarc
+  source:
+  - name: 112
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/dc00.ard
+  multi:
+  - name: ard/us/dc00.ard
+  - name: ard/fr/dc00.ard
+  - name: ard/gr/dc00.ard
+  - name: ard/it/dc00.ard
+  - name: ard/sp/dc00.ard
+  method: binarc
+  source:
+  - name: 106
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 107
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/dc01.ard
+  multi:
+  - name: ard/us/dc01.ard
+  - name: ard/fr/dc01.ard
+  - name: ard/gr/dc01.ard
+  - name: ard/it/dc01.ard
+  - name: ard/sp/dc01.ard
+  method: binarc
+  source:
+  - name: 101
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 104
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/dc02.ard
+  multi:
+  - name: ard/us/dc02.ard
+  - name: ard/fr/dc02.ard
+  - name: ard/gr/dc02.ard
+  - name: ard/it/dc02.ard
+  - name: ard/sp/dc02.ard
+  method: binarc
+  source:
+  - name: 105
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/dc03.ard
+  multi:
+  - name: ard/us/dc03.ard
+  - name: ard/fr/dc03.ard
+  - name: ard/gr/dc03.ard
+  - name: ard/it/dc03.ard
+  - name: ard/sp/dc03.ard
+  method: binarc
+  source:
+  - name: 103
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/dc04.ard
+  multi:
+  - name: ard/us/dc04.ard
+  - name: ard/fr/dc04.ard
+  - name: ard/gr/dc04.ard
+  - name: ard/it/dc04.ard
+  - name: ard/sp/dc04.ard
+  method: binarc
+  source:
+  - name: 108
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 109
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 110
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 112
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/dc05.ard
+  multi:
+  - name: ard/us/dc05.ard
+  - name: ard/fr/dc05.ard
+  - name: ard/gr/dc05.ard
+  - name: ard/it/dc05.ard
+  - name: ard/sp/dc05.ard
+  method: binarc
+  source:
+  - name: 111
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 205
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/dc06.ard
+  multi:
+  - name: ard/us/dc06.ard
+  - name: ard/fr/dc06.ard
+  - name: ard/gr/dc06.ard
+  - name: ard/it/dc06.ard
+  - name: ard/sp/dc06.ard
+  method: binarc
+  source:
+  - name: 102
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/dc07.ard
+  multi:
+  - name: ard/us/dc07.ard
+  - name: ard/fr/dc07.ard
+  - name: ard/gr/dc07.ard
+  - name: ard/it/dc07.ard
+  - name: ard/sp/dc07.ard
+  method: binarc
+  source:
+  - name: 201
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 202
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 203
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 204
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/di01.ard
+  multi:
+  - name: ard/us/di01.ard
+  - name: ard/fr/di01.ard
+  - name: ard/gr/di01.ard
+  - name: ard/it/di01.ard
+  - name: ard/sp/di01.ard
+  method: binarc
+  source:
+  - name: 997
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 998
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/di02.ard
+  multi:
+  - name: ard/us/di02.ard
+  - name: ard/fr/di02.ard
+  - name: ard/gr/di02.ard
+  - name: ard/it/di02.ard
+  - name: ard/sp/di02.ard
+  method: binarc
+  source:
+  - name: 999
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 899
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh00.ard
+  multi:
+  - name: ard/us/eh00.ard
+  - name: ard/fr/eh00.ard
+  - name: ard/gr/eh00.ard
+  - name: ard/it/eh00.ard
+  - name: ard/sp/eh00.ard
+  method: binarc
+  source:
+  - name: 203
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 501
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 502
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 503
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 504
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 505
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh01.ard
+  multi:
+  - name: ard/us/eh01.ard
+  - name: ard/fr/eh01.ard
+  - name: ard/gr/eh01.ard
+  - name: ard/it/eh01.ard
+  - name: ard/sp/eh01.ard
+  method: binarc
+  source:
+  - name: 101
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 301
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh03.ard
+  multi:
+  - name: ard/us/eh03.ard
+  - name: ard/fr/eh03.ard
+  - name: ard/gr/eh03.ard
+  - name: ard/it/eh03.ard
+  - name: ard/sp/eh03.ard
+  method: binarc
+  source:
+  - name: 102
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 105
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 201
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 202
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 204
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 205
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 506
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh04.ard
+  multi:
+  - name: ard/us/eh04.ard
+  - name: ard/fr/eh04.ard
+  - name: ard/gr/eh04.ard
+  - name: ard/it/eh04.ard
+  - name: ard/sp/eh04.ard
+  method: binarc
+  source:
+  - name: 106
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 108
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 125
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh05.ard
+  multi:
+  - name: ard/us/eh05.ard
+  - name: ard/fr/eh05.ard
+  - name: ard/gr/eh05.ard
+  - name: ard/it/eh05.ard
+  - name: ard/sp/eh05.ard
+  method: binarc
+  source:
+  - name: 107
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh06.ard
+  multi:
+  - name: ard/us/eh06.ard
+  - name: ard/fr/eh06.ard
+  - name: ard/gr/eh06.ard
+  - name: ard/it/eh06.ard
+  - name: ard/sp/eh06.ard
+  method: binarc
+  source:
+  - name: 109
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh09.ard
+  multi:
+  - name: ard/us/eh09.ard
+  - name: ard/fr/eh09.ard
+  - name: ard/gr/eh09.ard
+  - name: ard/it/eh09.ard
+  - name: ard/sp/eh09.ard
+  method: binarc
+  source:
+  - name: 507
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh10.ard
+  multi:
+  - name: ard/us/eh10.ard
+  - name: ard/fr/eh10.ard
+  - name: ard/gr/eh10.ard
+  - name: ard/it/eh10.ard
+  - name: ard/sp/eh10.ard
+  method: binarc
+  source:
+  - name: 111
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 113
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 114
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 605
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 606
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh11.ard
+  multi:
+  - name: ard/us/eh11.ard
+  - name: ard/fr/eh11.ard
+  - name: ard/gr/eh11.ard
+  - name: ard/it/eh11.ard
+  - name: ard/sp/eh11.ard
+  method: binarc
+  source:
+  - name: 116
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh12.ard
+  multi:
+  - name: ard/us/eh12.ard
+  - name: ard/fr/eh12.ard
+  - name: ard/gr/eh12.ard
+  - name: ard/it/eh12.ard
+  - name: ard/sp/eh12.ard
+  method: binarc
+  source:
+  - name: 112
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh13.ard
+  multi:
+  - name: ard/us/eh13.ard
+  - name: ard/fr/eh13.ard
+  - name: ard/gr/eh13.ard
+  - name: ard/it/eh13.ard
+  - name: ard/sp/eh13.ard
+  method: binarc
+  source:
+  - name: 120
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 123
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh14.ard
+  multi:
+  - name: ard/us/eh14.ard
+  - name: ard/fr/eh14.ard
+  - name: ard/gr/eh14.ard
+  - name: ard/it/eh14.ard
+  - name: ard/sp/eh14.ard
+  method: binarc
+  source:
+  - name: 118
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 119
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 609
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 610
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh15.ard
+  multi:
+  - name: ard/us/eh15.ard
+  - name: ard/fr/eh15.ard
+  - name: ard/gr/eh15.ard
+  - name: ard/it/eh15.ard
+  - name: ard/sp/eh15.ard
+  method: binarc
+  source:
+  - name: 121
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 122a
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 122b
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 607
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 608
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh16.ard
+  multi:
+  - name: ard/us/eh16.ard
+  - name: ard/fr/eh16.ard
+  - name: ard/gr/eh16.ard
+  - name: ard/it/eh16.ard
+  - name: ard/sp/eh16.ard
+  method: binarc
+  source:
+  - name: 110
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 117
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 124
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 126
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh17.ard
+  multi:
+  - name: ard/us/eh17.ard
+  - name: ard/fr/eh17.ard
+  - name: ard/gr/eh17.ard
+  - name: ard/it/eh17.ard
+  - name: ard/sp/eh17.ard
+  method: binarc
+  source:
+  - name: 129
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh18.ard
+  multi:
+  - name: ard/us/eh18.ard
+  - name: ard/fr/eh18.ard
+  - name: ard/gr/eh18.ard
+  - name: ard/it/eh18.ard
+  - name: ard/sp/eh18.ard
+  method: binarc
+  source:
+  - name: 115
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 130
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 133
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 134
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh19.ard
+  multi:
+  - name: ard/us/eh19.ard
+  - name: ard/fr/eh19.ard
+  - name: ard/gr/eh19.ard
+  - name: ard/it/eh19.ard
+  - name: ard/sp/eh19.ard
+  method: binarc
+  source:
+  - name: 131
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 132
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 601
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 602
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh20.ard
+  multi:
+  - name: ard/us/eh20.ard
+  - name: ard/fr/eh20.ard
+  - name: ard/gr/eh20.ard
+  - name: ard/it/eh20.ard
+  - name: ard/sp/eh20.ard
+  method: binarc
+  source:
+  - name: 139
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 140
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 603
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 604
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh21.ard
+  multi:
+  - name: ard/us/eh21.ard
+  - name: ard/fr/eh21.ard
+  - name: ard/gr/eh21.ard
+  - name: ard/it/eh21.ard
+  - name: ard/sp/eh21.ard
+  method: binarc
+  source:
+  - name: 103a
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 103b
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 611
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 612
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh23.ard
+  multi:
+  - name: ard/us/eh23.ard
+  - name: ard/fr/eh23.ard
+  - name: ard/gr/eh23.ard
+  - name: ard/it/eh23.ard
+  - name: ard/sp/eh23.ard
+  method: binarc
+  source:
+  - name: 138
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh24.ard
+  multi:
+  - name: ard/us/eh24.ard
+  - name: ard/fr/eh24.ard
+  - name: ard/gr/eh24.ard
+  - name: ard/it/eh24.ard
+  - name: ard/sp/eh24.ard
+  method: binarc
+  source:
+  - name: 141
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh27.ard
+  multi:
+  - name: ard/us/eh27.ard
+  - name: ard/fr/eh27.ard
+  - name: ard/gr/eh27.ard
+  - name: ard/it/eh27.ard
+  - name: ard/sp/eh27.ard
+  method: binarc
+  source:
+  - name: 135
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/eh29.ard
+  multi:
+  - name: ard/us/eh29.ard
+  - name: ard/fr/eh29.ard
+  - name: ard/gr/eh29.ard
+  - name: ard/it/eh29.ard
+  - name: ard/sp/eh29.ard
+  method: binarc
+  source:
+  - name: 136
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 137
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/es00.ard
+  multi:
+  - name: ard/us/es00.ard
+  - name: ard/fr/es00.ard
+  - name: ard/gr/es00.ard
+  - name: ard/it/es00.ard
+  - name: ard/sp/es00.ard
+  method: binarc
+  source:
+  - name: 006
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 995
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 998
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 999
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 993
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/es01.ard
+  multi:
+  - name: ard/us/es01.ard
+  - name: ard/fr/es01.ard
+  - name: ard/gr/es01.ard
+  - name: ard/it/es01.ard
+  - name: ard/sp/es01.ard
+  method: binarc
+  source:
+  - name: 994
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb00.ard
+  multi:
+  - name: ard/us/hb00.ard
+  - name: ard/fr/hb00.ard
+  - name: ard/gr/hb00.ard
+  - name: ard/it/hb00.ard
+  - name: ard/sp/hb00.ard
+  method: binarc
+  source:
+  - name: 101
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 801
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb01.ard
+  multi:
+  - name: ard/us/hb01.ard
+  - name: ard/fr/hb01.ard
+  - name: ard/gr/hb01.ard
+  - name: ard/it/hb01.ard
+  - name: ard/sp/hb01.ard
+  method: binarc
+  source:
+  - name: 109
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 417
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 420
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 601
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 602
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 607
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 605s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb02.ard
+  multi:
+  - name: ard/us/hb02.ard
+  - name: ard/fr/hb02.ard
+  - name: ard/gr/hb02.ard
+  - name: ard/it/hb02.ard
+  - name: ard/sp/hb02.ard
+  method: binarc
+  source:
+  - name: 409j
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 414
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 416
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 409b
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 409c
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb03.ard
+  multi:
+  - name: ard/us/hb03.ard
+  - name: ard/fr/hb03.ard
+  - name: ard/gr/hb03.ard
+  - name: ard/it/hb03.ard
+  - name: ard/sp/hb03.ard
+  method: binarc
+  source:
+  - name: 413
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb04.ard
+  multi:
+  - name: ard/us/hb04.ard
+  - name: ard/fr/hb04.ard
+  - name: ard/gr/hb04.ard
+  - name: ard/it/hb04.ard
+  - name: ard/sp/hb04.ard
+  method: binarc
+  source:
+  - name: 411
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 412
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 741
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 742
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb05.ard
+  multi:
+  - name: ard/us/hb05.ard
+  - name: ard/fr/hb05.ard
+  - name: ard/gr/hb05.ard
+  - name: ard/it/hb05.ard
+  - name: ard/sp/hb05.ard
+  method: binarc
+  source:
+  - name: 208
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 209
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 210
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 301
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 302
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 303
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 304
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 401
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 402
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 421
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 422
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 512
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 515
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 517
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 518
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 519
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 503
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 504
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 301s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 303v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 421s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 516s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb06.ard
+  multi:
+  - name: ard/us/hb06.ard
+  - name: ard/fr/hb06.ard
+  - name: ard/gr/hb06.ard
+  - name: ard/it/hb06.ard
+  - name: ard/sp/hb06.ard
+  method: binarc
+  source:
+  - name: 206
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 406
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 419
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 502
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 507
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 406v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb08.ard
+  multi:
+  - name: ard/us/hb08.ard
+  - name: ard/fr/hb08.ard
+  - name: ard/gr/hb08.ard
+  - name: ard/it/hb08.ard
+  - name: ard/sp/hb08.ard
+  method: binarc
+  source:
+  - name: 107
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 110
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 108
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 205
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 409
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb09.ard
+  multi:
+  - name: ard/us/hb09.ard
+  - name: ard/fr/hb09.ard
+  - name: ard/gr/hb09.ard
+  - name: ard/it/hb09.ard
+  - name: ard/sp/hb09.ard
+  method: binarc
+  source:
+  - name: 104
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 105
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 509
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 510
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 514
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 506
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 901
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 905
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 906
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 907s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 510s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb10.ard
+  multi:
+  - name: ard/us/hb10.ard
+  - name: ard/fr/hb10.ard
+  - name: ard/gr/hb10.ard
+  - name: ard/it/hb10.ard
+  - name: ard/sp/hb10.ard
+  method: binarc
+  source:
+  - name: 102
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 103
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 201
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 202
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 203
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 508
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 520
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 605
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 606
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 204s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb11.ard
+  multi:
+  - name: ard/us/hb11.ard
+  - name: ard/fr/hb11.ard
+  - name: ard/gr/hb11.ard
+  - name: ard/it/hb11.ard
+  - name: ard/sp/hb11.ard
+  method: binarc
+  source:
+  - name: 207
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 404
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 405
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb12.ard
+  multi:
+  - name: ard/us/hb12.ard
+  - name: ard/fr/hb12.ard
+  - name: ard/gr/hb12.ard
+  - name: ard/it/hb12.ard
+  - name: ard/sp/hb12.ard
+  method: binarc
+  source:
+  - name: 513
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb13.ard
+  multi:
+  - name: ard/us/hb13.ard
+  - name: ard/fr/hb13.ard
+  - name: ard/gr/hb13.ard
+  - name: ard/it/hb13.ard
+  - name: ard/sp/hb13.ard
+  method: binarc
+  source:
+  - name: 106
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 204
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 511
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 516
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 501
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 802
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 902
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 903
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 904
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 907
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 106v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb15.ard
+  multi:
+  - name: ard/us/hb15.ard
+  - name: ard/fr/hb15.ard
+  - name: ard/gr/hb15.ard
+  - name: ard/it/hb15.ard
+  - name: ard/sp/hb15.ard
+  method: binarc
+  source:
+  - name: 415
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 416s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb16.ard
+  multi:
+  - name: ard/us/hb16.ard
+  - name: ard/fr/hb16.ard
+  - name: ard/gr/hb16.ard
+  - name: ard/it/hb16.ard
+  - name: ard/sp/hb16.ard
+  method: binarc
+  source:
+  - name: 409d
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 409e
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 409f
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 409g
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 409h
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb18.ard
+  multi:
+  - name: ard/us/hb18.ard
+  - name: ard/fr/hb18.ard
+  - name: ard/gr/hb18.ard
+  - name: ard/it/hb18.ard
+  - name: ard/sp/hb18.ard
+  method: binarc
+  source:
+  - name: 407
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 408
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 505
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb19.ard
+  multi:
+  - name: ard/us/hb19.ard
+  - name: ard/fr/hb19.ard
+  - name: ard/gr/hb19.ard
+  - name: ard/it/hb19.ard
+  - name: ard/sp/hb19.ard
+  method: binarc
+  source:
+  - name: 403
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 409a
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 409i
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 410
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 418
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb21.ard
+  multi:
+  - name: ard/us/hb21.ard
+  - name: ard/fr/hb21.ard
+  - name: ard/gr/hb21.ard
+  - name: ard/it/hb21.ard
+  - name: ard/sp/hb21.ard
+  method: binarc
+  source:
+  - name: 711
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb22.ard
+  multi:
+  - name: ard/us/hb22.ard
+  - name: ard/fr/hb22.ard
+  - name: ard/gr/hb22.ard
+  - name: ard/it/hb22.ard
+  - name: ard/sp/hb22.ard
+  method: binarc
+  source:
+  - name: 712
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb26.ard
+  multi:
+  - name: ard/us/hb26.ard
+  - name: ard/fr/hb26.ard
+  - name: ard/gr/hb26.ard
+  - name: ard/it/hb26.ard
+  - name: ard/sp/hb26.ard
+  method: binarc
+  source:
+  - name: 713
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 714
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb27.ard
+  multi:
+  - name: ard/us/hb27.ard
+  - name: ard/fr/hb27.ard
+  - name: ard/gr/hb27.ard
+  - name: ard/it/hb27.ard
+  - name: ard/sp/hb27.ard
+  method: binarc
+  source:
+  - name: 701
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb32.ard
+  multi:
+  - name: ard/us/hb32.ard
+  - name: ard/fr/hb32.ard
+  - name: ard/gr/hb32.ard
+  - name: ard/it/hb32.ard
+  - name: ard/sp/hb32.ard
+  method: binarc
+  source:
+  - name: 721
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 722
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 731
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 732
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb33.ard
+  multi:
+  - name: ard/us/hb33.ard
+  - name: ard/fr/hb33.ard
+  - name: ard/gr/hb33.ard
+  - name: ard/it/hb33.ard
+  - name: ard/sp/hb33.ard
+  method: binarc
+  source:
+  - name: 723
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 724
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 729
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 730
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 733
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 734
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 739
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 740
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb34.ard
+  multi:
+  - name: ard/us/hb34.ard
+  - name: ard/fr/hb34.ard
+  - name: ard/gr/hb34.ard
+  - name: ard/it/hb34.ard
+  - name: ard/sp/hb34.ard
+  method: binarc
+  source:
+  - name: 725
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 726
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 735
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 736
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/hb38.ard
+  multi:
+  - name: ard/us/hb38.ard
+  - name: ard/fr/hb38.ard
+  - name: ard/gr/hb38.ard
+  - name: ard/it/hb38.ard
+  - name: ard/sp/hb38.ard
+  method: binarc
+  source:
+  - name: 727
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 728
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 737
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 738
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/he00.ard
+  multi:
+  - name: ard/us/he00.ard
+  - name: ard/fr/he00.ard
+  - name: ard/gr/he00.ard
+  - name: ard/it/he00.ard
+  - name: ard/sp/he00.ard
+  method: binarc
+  source:
+  - name: 101
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 123
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 141
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 124
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 125
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 127
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 123v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 124s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 125v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 126s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/he01.ard
+  multi:
+  - name: ard/us/he01.ard
+  - name: ard/fr/he01.ard
+  - name: ard/gr/he01.ard
+  - name: ard/it/he01.ard
+  - name: ard/sp/he01.ard
+  method: binarc
+  source:
+  - name: 121
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 122
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 140s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/he02.ard
+  multi:
+  - name: ard/us/he02.ard
+  - name: ard/fr/he02.ard
+  - name: ard/gr/he02.ard
+  - name: ard/it/he02.ard
+  - name: ard/sp/he02.ard
+  method: binarc
+  source:
+  - name: 138
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/he03.ard
+  multi:
+  - name: ard/us/he03.ard
+  - name: ard/fr/he03.ard
+  - name: ard/gr/he03.ard
+  - name: ard/it/he03.ard
+  - name: ard/sp/he03.ard
+  method: binarc
+  source:
+  - name: 102
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 103
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 118
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 126
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 137
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 201
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 218
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 202
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 203
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 205
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 207
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 209
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 219
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 216
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 103v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 103s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 201s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 202v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 206s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/he04.ard
+  multi:
+  - name: ard/us/he04.ard
+  - name: ard/fr/he04.ard
+  - name: ard/gr/he04.ard
+  - name: ard/it/he04.ard
+  - name: ard/sp/he04.ard
+  method: binarc
+  source:
+  - name: 117
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 120
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 140
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 118s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/he05.ard
+  multi:
+  - name: ard/us/he05.ard
+  - name: ard/fr/he05.ard
+  - name: ard/gr/he05.ard
+  - name: ard/it/he05.ard
+  - name: ard/sp/he05.ard
+  method: binarc
+  source:
+  - name: 107
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 112
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/he06.ard
+  multi:
+  - name: ard/us/he06.ard
+  - name: ard/fr/he06.ard
+  - name: ard/gr/he06.ard
+  - name: ard/it/he06.ard
+  - name: ard/sp/he06.ard
+  method: binarc
+  source:
+  - name: 106
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 109
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 111
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 114
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 119
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 211
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 212
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/he07.ard
+  multi:
+  - name: ard/us/he07.ard
+  - name: ard/fr/he07.ard
+  - name: ard/gr/he07.ard
+  - name: ard/it/he07.ard
+  - name: ard/sp/he07.ard
+  method: binarc
+  source:
+  - name: 115
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 116
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 208
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 208v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/he08.ard
+  multi:
+  - name: ard/us/he08.ard
+  - name: ard/fr/he08.ard
+  - name: ard/gr/he08.ard
+  - name: ard/it/he08.ard
+  - name: ard/sp/he08.ard
+  method: binarc
+  source:
+  - name: 132
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 133
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 135
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 136
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 137s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/he09.ard
+  multi:
+  - name: ard/us/he09.ard
+  - name: ard/fr/he09.ard
+  - name: ard/gr/he09.ard
+  - name: ard/it/he09.ard
+  - name: ard/sp/he09.ard
+  method: binarc
+  source:
+  - name: 204
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 206
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/he10.ard
+  multi:
+  - name: ard/us/he10.ard
+  - name: ard/fr/he10.ard
+  - name: ard/gr/he10.ard
+  - name: ard/it/he10.ard
+  - name: ard/sp/he10.ard
+  method: binarc
+  source:
+  - name: 105
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 113
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 105v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/he11.ard
+  multi:
+  - name: ard/us/he11.ard
+  - name: ard/fr/he11.ard
+  - name: ard/gr/he11.ard
+  - name: ard/it/he11.ard
+  - name: ard/sp/he11.ard
+  method: binarc
+  source:
+  - name: 128
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/he12.ard
+  multi:
+  - name: ard/us/he12.ard
+  - name: ard/fr/he12.ard
+  - name: ard/gr/he12.ard
+  - name: ard/it/he12.ard
+  - name: ard/sp/he12.ard
+  method: binarc
+  source:
+  - name: 131
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 134
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/he13.ard
+  multi:
+  - name: ard/us/he13.ard
+  - name: ard/fr/he13.ard
+  - name: ard/gr/he13.ard
+  - name: ard/it/he13.ard
+  - name: ard/sp/he13.ard
+  method: binarc
+  source:
+  - name: 210
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 213
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 214
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 215
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 301
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 302
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 303
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 304
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 305
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/he14.ard
+  multi:
+  - name: ard/us/he14.ard
+  - name: ard/fr/he14.ard
+  - name: ard/gr/he14.ard
+  - name: ard/it/he14.ard
+  - name: ard/sp/he14.ard
+  method: binarc
+  source:
+  - name: 217
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/he15.ard
+  multi:
+  - name: ard/us/he15.ard
+  - name: ard/fr/he15.ard
+  - name: ard/gr/he15.ard
+  - name: ard/it/he15.ard
+  - name: ard/sp/he15.ard
+  method: binarc
+  source:
+  - name: 104
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/he17.ard
+  multi:
+  - name: ard/us/he17.ard
+  - name: ard/fr/he17.ard
+  - name: ard/gr/he17.ard
+  - name: ard/it/he17.ard
+  - name: ard/sp/he17.ard
+  method: binarc
+  source:
+  - name: 129
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 130
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 130v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/he18.ard
+  multi:
+  - name: ard/us/he18.ard
+  - name: ard/fr/he18.ard
+  - name: ard/gr/he18.ard
+  - name: ard/it/he18.ard
+  - name: ard/sp/he18.ard
+  method: binarc
+  source:
+  - name: 139
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lk00.ard
+  multi:
+  - name: ard/us/lk00.ard
+  - name: ard/fr/lk00.ard
+  - name: ard/gr/lk00.ard
+  - name: ard/it/lk00.ard
+  - name: ard/sp/lk00.ard
+  method: binarc
+  source:
+  - name: 106
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 107
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 111
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 119
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 123
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 202
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 203
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 208
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 211
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 214
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 108s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 203s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lk01.ard
+  multi:
+  - name: ard/us/lk01.ard
+  - name: ard/fr/lk01.ard
+  - name: ard/gr/lk01.ard
+  - name: ard/it/lk01.ard
+  - name: ard/sp/lk01.ard
+  method: binarc
+  source:
+  - name: 205
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lk02.ard
+  multi:
+  - name: ard/us/lk02.ard
+  - name: ard/fr/lk02.ard
+  - name: ard/gr/lk02.ard
+  - name: ard/it/lk02.ard
+  - name: ard/sp/lk02.ard
+  method: binarc
+  source:
+  - name: 120
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 204
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 204a
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 205s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lk03.ard
+  multi:
+  - name: ard/us/lk03.ard
+  - name: ard/fr/lk03.ard
+  - name: ard/gr/lk03.ard
+  - name: ard/it/lk03.ard
+  - name: ard/sp/lk03.ard
+  method: binarc
+  source:
+  - name: 110
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 110a
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 112
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lk04.ard
+  multi:
+  - name: ard/us/lk04.ard
+  - name: ard/fr/lk04.ard
+  - name: ard/gr/lk04.ard
+  - name: ard/it/lk04.ard
+  - name: ard/sp/lk04.ard
+  method: binarc
+  source:
+  - name: 108
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 118
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 201
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lk05.ard
+  multi:
+  - name: ard/us/lk05.ard
+  - name: ard/fr/lk05.ard
+  - name: ard/gr/lk05.ard
+  - name: ard/it/lk05.ard
+  - name: ard/sp/lk05.ard
+  method: binarc
+  source:
+  - name: 104
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 105
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 206
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 207
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 208s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lk06.ard
+  multi:
+  - name: ard/us/lk06.ard
+  - name: ard/fr/lk06.ard
+  - name: ard/gr/lk06.ard
+  - name: ard/it/lk06.ard
+  - name: ard/sp/lk06.ard
+  method: binarc
+  source:
+  - name: 103
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lk08.ard
+  multi:
+  - name: ard/us/lk08.ard
+  - name: ard/fr/lk08.ard
+  - name: ard/gr/lk08.ard
+  - name: ard/it/lk08.ard
+  - name: ard/sp/lk08.ard
+  method: binarc
+  source:
+  - name: 114
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lk09.ard
+  multi:
+  - name: ard/us/lk09.ard
+  - name: ard/fr/lk09.ard
+  - name: ard/gr/lk09.ard
+  - name: ard/it/lk09.ard
+  - name: ard/sp/lk09.ard
+  method: binarc
+  source:
+  - name: 109
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 113
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 115
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 116
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 209
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 210
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lk10.ard
+  multi:
+  - name: ard/us/lk10.ard
+  - name: ard/fr/lk10.ard
+  - name: ard/gr/lk10.ard
+  - name: ard/it/lk10.ard
+  - name: ard/sp/lk10.ard
+  method: binarc
+  source:
+  - name: 215
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lk11.ard
+  multi:
+  - name: ard/us/lk11.ard
+  - name: ard/fr/lk11.ard
+  - name: ard/gr/lk11.ard
+  - name: ard/it/lk11.ard
+  - name: ard/sp/lk11.ard
+  method: binarc
+  source:
+  - name: 102
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lk12.ard
+  multi:
+  - name: ard/us/lk12.ard
+  - name: ard/fr/lk12.ard
+  - name: ard/gr/lk12.ard
+  - name: ard/it/lk12.ard
+  - name: ard/sp/lk12.ard
+  method: binarc
+  source:
+  - name: 117
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lk13.ard
+  multi:
+  - name: ard/us/lk13.ard
+  - name: ard/fr/lk13.ard
+  - name: ard/gr/lk13.ard
+  - name: ard/it/lk13.ard
+  - name: ard/sp/lk13.ard
+  method: binarc
+  source:
+  - name: 121
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lk14.ard
+  multi:
+  - name: ard/us/lk14.ard
+  - name: ard/fr/lk14.ard
+  - name: ard/gr/lk14.ard
+  - name: ard/it/lk14.ard
+  - name: ard/sp/lk14.ard
+  method: binarc
+  source:
+  - name: 122
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lk15.ard
+  multi:
+  - name: ard/us/lk15.ard
+  - name: ard/fr/lk15.ard
+  - name: ard/gr/lk15.ard
+  - name: ard/it/lk15.ard
+  - name: ard/sp/lk15.ard
+  method: binarc
+  source:
+  - name: 212
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 213
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lk16.ard
+  multi:
+  - name: ard/us/lk16.ard
+  - name: ard/fr/lk16.ard
+  - name: ard/gr/lk16.ard
+  - name: ard/it/lk16.ard
+  - name: ard/sp/lk16.ard
+  method: binarc
+  source:
+  - name: 101
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lm00.ard
+  multi:
+  - name: ard/us/lm00.ard
+  - name: ard/fr/lm00.ard
+  - name: ard/gr/lm00.ard
+  - name: ard/it/lm00.ard
+  - name: ard/sp/lm00.ard
+  method: binarc
+  source:
+  - name: 204
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lm01.ard
+  multi:
+  - name: ard/us/lm01.ard
+  - name: ard/fr/lm01.ard
+  - name: ard/gr/lm01.ard
+  - name: ard/it/lm01.ard
+  - name: ard/sp/lm01.ard
+  method: binarc
+  source:
+  - name: 202
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 203
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 206
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 401
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 204s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 402s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lm02.ard
+  multi:
+  - name: ard/us/lm02.ard
+  - name: ard/fr/lm02.ard
+  - name: ard/gr/lm02.ard
+  - name: ard/it/lm02.ard
+  - name: ard/sp/lm02.ard
+  method: binarc
+  source:
+  - name: 102
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 103
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 104
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 111
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 108
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 205
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 402
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 404
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 411
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 103s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 402v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lm03.ard
+  multi:
+  - name: ard/us/lm03.ard
+  - name: ard/fr/lm03.ard
+  - name: ard/gr/lm03.ard
+  - name: ard/it/lm03.ard
+  - name: ard/sp/lm03.ard
+  method: binarc
+  source:
+  - name: 301
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 302
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 304
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 301v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 303s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lm04.ard
+  multi:
+  - name: ard/us/lm04.ard
+  - name: ard/fr/lm04.ard
+  - name: ard/gr/lm04.ard
+  - name: ard/it/lm04.ard
+  - name: ard/sp/lm04.ard
+  method: binarc
+  source:
+  - name: 105
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 106
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 110
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 501
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 502
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 503
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 105v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 411s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 501v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lm05.ard
+  multi:
+  - name: ard/us/lm05.ard
+  - name: ard/fr/lm05.ard
+  - name: ard/gr/lm05.ard
+  - name: ard/it/lm05.ard
+  - name: ard/sp/lm05.ard
+  method: binarc
+  source:
+  - name: 109
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 201
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 408
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lm06.ard
+  multi:
+  - name: ard/us/lm06.ard
+  - name: ard/fr/lm06.ard
+  - name: ard/gr/lm06.ard
+  - name: ard/it/lm06.ard
+  - name: ard/sp/lm06.ard
+  method: binarc
+  source:
+  - name: 107
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 303
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 405
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lm07.ard
+  multi:
+  - name: ard/us/lm07.ard
+  - name: ard/fr/lm07.ard
+  - name: ard/gr/lm07.ard
+  - name: ard/it/lm07.ard
+  - name: ard/sp/lm07.ard
+  method: binarc
+  source:
+  - name: 101
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 403
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 406
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 410
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 404s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lm08.ard
+  multi:
+  - name: ard/us/lm08.ard
+  - name: ard/fr/lm08.ard
+  - name: ard/gr/lm08.ard
+  - name: ard/it/lm08.ard
+  - name: ard/sp/lm08.ard
+  method: binarc
+  source:
+  - name: 407
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lm09.ard
+  multi:
+  - name: ard/us/lm09.ard
+  - name: ard/fr/lm09.ard
+  - name: ard/gr/lm09.ard
+  - name: ard/it/lm09.ard
+  - name: ard/sp/lm09.ard
+  method: binarc
+  source:
+  - name: 409
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 412
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/lm10.ard
+  multi:
+  - name: ard/us/lm10.ard
+  - name: ard/fr/lm10.ard
+  - name: ard/gr/lm10.ard
+  - name: ard/it/lm10.ard
+  - name: ard/sp/lm10.ard
+  method: binarc
+  source:
+  - name: 601
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/mu00.ard
+  multi:
+  - name: ard/us/mu00.ard
+  - name: ard/fr/mu00.ard
+  - name: ard/gr/mu00.ard
+  - name: ard/it/mu00.ard
+  - name: ard/sp/mu00.ard
+  method: binarc
+  source:
+  - name: 101
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 102
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/mu01.ard
+  multi:
+  - name: ard/us/mu01.ard
+  - name: ard/fr/mu01.ard
+  - name: ard/gr/mu01.ard
+  - name: ard/it/mu01.ard
+  - name: ard/sp/mu01.ard
+  method: binarc
+  source:
+  - name: 103
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 104
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 184
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 185
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 186
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 105
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 182
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 104s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/mu02.ard
+  multi:
+  - name: ard/us/mu02.ard
+  - name: ard/fr/mu02.ard
+  - name: ard/gr/mu02.ard
+  - name: ard/it/mu02.ard
+  - name: ard/sp/mu02.ard
+  method: binarc
+  source:
+  - name: 119
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/mu03.ard
+  multi:
+  - name: ard/us/mu03.ard
+  - name: ard/fr/mu03.ard
+  - name: ard/gr/mu03.ard
+  - name: ard/it/mu03.ard
+  - name: ard/sp/mu03.ard
+  method: binarc
+  source:
+  - name: 106
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 107
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/mu04.ard
+  multi:
+  - name: ard/us/mu04.ard
+  - name: ard/fr/mu04.ard
+  - name: ard/gr/mu04.ard
+  - name: ard/it/mu04.ard
+  - name: ard/sp/mu04.ard
+  method: binarc
+  source:
+  - name: 108
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/mu05.ard
+  multi:
+  - name: ard/us/mu05.ard
+  - name: ard/fr/mu05.ard
+  - name: ard/gr/mu05.ard
+  - name: ard/it/mu05.ard
+  - name: ard/sp/mu05.ard
+  method: binarc
+  source:
+  - name: 109
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 110
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/mu06.ard
+  multi:
+  - name: ard/us/mu06.ard
+  - name: ard/fr/mu06.ard
+  - name: ard/gr/mu06.ard
+  - name: ard/it/mu06.ard
+  - name: ard/sp/mu06.ard
+  method: binarc
+  source:
+  - name: 114
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 202
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 205
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/mu07.ard
+  multi:
+  - name: ard/us/mu07.ard
+  - name: ard/fr/mu07.ard
+  - name: ard/gr/mu07.ard
+  - name: ard/it/mu07.ard
+  - name: ard/sp/mu07.ard
+  method: binarc
+  source:
+  - name: 112
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 113
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 113a
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 203
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 204
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/mu08.ard
+  multi:
+  - name: ard/us/mu08.ard
+  - name: ard/fr/mu08.ard
+  - name: ard/gr/mu08.ard
+  - name: ard/it/mu08.ard
+  - name: ard/sp/mu08.ard
+  method: binarc
+  source:
+  - name: 115
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 116
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 207
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 291
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 208
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 214
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 215
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/mu09.ard
+  multi:
+  - name: ard/us/mu09.ard
+  - name: ard/fr/mu09.ard
+  - name: ard/gr/mu09.ard
+  - name: ard/it/mu09.ard
+  - name: ard/sp/mu09.ard
+  method: binarc
+  source:
+  - name: 117
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 118
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 209
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/mu10.ard
+  multi:
+  - name: ard/us/mu10.ard
+  - name: ard/fr/mu10.ard
+  - name: ard/gr/mu10.ard
+  - name: ard/it/mu10.ard
+  - name: ard/sp/mu10.ard
+  method: binarc
+  source:
+  - name: 210
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 292
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 211
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 213
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 211s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/mu11.ard
+  multi:
+  - name: ard/us/mu11.ard
+  - name: ard/fr/mu11.ard
+  - name: ard/gr/mu11.ard
+  - name: ard/it/mu11.ard
+  - name: ard/sp/mu11.ard
+  method: binarc
+  source:
+  - name: 206
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 212
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 216
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/mu12.ard
+  multi:
+  - name: ard/us/mu12.ard
+  - name: ard/fr/mu12.ard
+  - name: ard/gr/mu12.ard
+  - name: ard/it/mu12.ard
+  - name: ard/sp/mu12.ard
+  method: binarc
+  source:
+  - name: 111
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 201
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/nm00.ard
+  multi:
+  - name: ard/us/nm00.ard
+  - name: ard/fr/nm00.ard
+  - name: ard/gr/nm00.ard
+  - name: ard/it/nm00.ard
+  - name: ard/sp/nm00.ard
+  method: binarc
+  source:
+  - name: 103
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 105
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 106
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 108
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 208
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 209
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 217
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 106s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 210s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/nm01.ard
+  multi:
+  - name: ard/us/nm01.ard
+  - name: ard/fr/nm01.ard
+  - name: ard/gr/nm01.ard
+  - name: ard/it/nm01.ard
+  - name: ard/sp/nm01.ard
+  method: binarc
+  source:
+  - name: 104
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 201
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 210
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/nm02.ard
+  multi:
+  - name: ard/us/nm02.ard
+  - name: ard/fr/nm02.ard
+  - name: ard/gr/nm02.ard
+  - name: ard/it/nm02.ard
+  - name: ard/sp/nm02.ard
+  method: binarc
+  source:
+  - name: 102
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 107
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 121
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/nm03.ard
+  multi:
+  - name: ard/us/nm03.ard
+  - name: ard/fr/nm03.ard
+  - name: ard/gr/nm03.ard
+  - name: ard/it/nm03.ard
+  - name: ard/sp/nm03.ard
+  method: binarc
+  source:
+  - name: 116
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 118
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 119
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 119s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/nm04.ard
+  multi:
+  - name: ard/us/nm04.ard
+  - name: ard/fr/nm04.ard
+  - name: ard/gr/nm04.ard
+  - name: ard/it/nm04.ard
+  - name: ard/sp/nm04.ard
+  method: binarc
+  source:
+  - name: 101
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 109
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 120
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 202
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 121s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/nm05.ard
+  multi:
+  - name: ard/us/nm05.ard
+  - name: ard/fr/nm05.ard
+  - name: ard/gr/nm05.ard
+  - name: ard/it/nm05.ard
+  - name: ard/sp/nm05.ard
+  method: binarc
+  source:
+  - name: 110
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 123
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/nm06.ard
+  multi:
+  - name: ard/us/nm06.ard
+  - name: ard/fr/nm06.ard
+  - name: ard/gr/nm06.ard
+  - name: ard/it/nm06.ard
+  - name: ard/sp/nm06.ard
+  method: binarc
+  source:
+  - name: 111
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 112
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 115
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 126
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 214
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/nm07.ard
+  multi:
+  - name: ard/us/nm07.ard
+  - name: ard/fr/nm07.ard
+  - name: ard/gr/nm07.ard
+  - name: ard/it/nm07.ard
+  - name: ard/sp/nm07.ard
+  method: binarc
+  source:
+  - name: 215
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 216
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/nm08.ard
+  multi:
+  - name: ard/us/nm08.ard
+  - name: ard/fr/nm08.ard
+  - name: ard/gr/nm08.ard
+  - name: ard/it/nm08.ard
+  - name: ard/sp/nm08.ard
+  method: binarc
+  source:
+  - name: 113
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 203
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 207
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 211
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 213
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/nm09.ard
+  multi:
+  - name: ard/us/nm09.ard
+  - name: ard/fr/nm09.ard
+  - name: ard/gr/nm09.ard
+  - name: ard/it/nm09.ard
+  - name: ard/sp/nm09.ard
+  method: binarc
+  source:
+  - name: 114
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 122
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 124
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 125
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/nm10.ard
+  multi:
+  - name: ard/us/nm10.ard
+  - name: ard/fr/nm10.ard
+  - name: ard/gr/nm10.ard
+  - name: ard/it/nm10.ard
+  - name: ard/sp/nm10.ard
+  method: binarc
+  source:
+  - name: 205
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 206
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 212
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 206s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/po00.ard
+  multi:
+  - name: ard/us/po00.ard
+  - name: ard/fr/po00.ard
+  - name: ard/gr/po00.ard
+  - name: ard/it/po00.ard
+  - name: ard/sp/po00.ard
+  method: binarc
+  source:
+  - name: 001
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 005
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 101
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 106
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 201
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 206
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 301
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 307
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 401
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 405
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 501
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/po01.ard
+  multi:
+  - name: ard/us/po01.ard
+  - name: ard/fr/po01.ard
+  - name: ard/gr/po01.ard
+  - name: ard/it/po01.ard
+  - name: ard/sp/po01.ard
+  method: binarc
+  source:
+  - name: 306
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 502
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 599
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 504
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 502s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/po02.ard
+  multi:
+  - name: ard/us/po02.ard
+  - name: ard/fr/po02.ard
+  - name: ard/gr/po02.ard
+  - name: ard/it/po02.ard
+  - name: ard/sp/po02.ard
+  method: binarc
+  source:
+  - name: 003
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 004
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 007
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 008
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/po03.ard
+  multi:
+  - name: ard/us/po03.ard
+  - name: ard/fr/po03.ard
+  - name: ard/gr/po03.ard
+  - name: ard/it/po03.ard
+  - name: ard/sp/po03.ard
+  method: binarc
+  source:
+  - name: 202
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 203
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 299
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 205
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 203v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 203s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/po04.ard
+  multi:
+  - name: ard/us/po04.ard
+  - name: ard/fr/po04.ard
+  - name: ard/gr/po04.ard
+  - name: ard/it/po04.ard
+  - name: ard/sp/po04.ard
+  method: binarc
+  source:
+  - name: 102
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 103
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 199
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 105
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 103s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/po05.ard
+  multi:
+  - name: ard/us/po05.ard
+  - name: ard/fr/po05.ard
+  - name: ard/gr/po05.ard
+  - name: ard/it/po05.ard
+  - name: ard/sp/po05.ard
+  method: binarc
+  source:
+  - name: 302
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 303
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 305
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 303s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/po08.ard
+  multi:
+  - name: ard/us/po08.ard
+  - name: ard/fr/po08.ard
+  - name: ard/gr/po08.ard
+  - name: ard/it/po08.ard
+  - name: ard/sp/po08.ard
+  method: binarc
+  source:
+  - name: 399
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/po09.ard
+  multi:
+  - name: ard/us/po09.ard
+  - name: ard/fr/po09.ard
+  - name: ard/gr/po09.ard
+  - name: ard/it/po09.ard
+  - name: ard/sp/po09.ard
+  method: binarc
+  source:
+  - name: 402
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 499
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 404
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 402s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tr00.ard
+  multi:
+  - name: ard/us/tr00.ard
+  - name: ard/fr/tr00.ard
+  - name: ard/gr/tr00.ard
+  - name: ard/it/tr00.ard
+  - name: ard/sp/tr00.ard
+  method: binarc
+  source:
+  - name: 102
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 103
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 104
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 107
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 108
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 110
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 202
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 204
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 103v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 103s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tr01.ard
+  multi:
+  - name: ard/us/tr01.ard
+  - name: ard/fr/tr01.ard
+  - name: ard/gr/tr01.ard
+  - name: ard/it/tr01.ard
+  - name: ard/sp/tr01.ard
+  method: binarc
+  source:
+  - name: 101
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 105
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 106
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 201
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 106v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 106s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tr02.ard
+  multi:
+  - name: ard/us/tr02.ard
+  - name: ard/fr/tr02.ard
+  - name: ard/gr/tr02.ard
+  - name: ard/it/tr02.ard
+  - name: ard/sp/tr02.ard
+  method: binarc
+  source:
+  - name: 109
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 118
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 203
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 204s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tr03.ard
+  multi:
+  - name: ard/us/tr03.ard
+  - name: ard/fr/tr03.ard
+  - name: ard/gr/tr03.ard
+  - name: ard/it/tr03.ard
+  - name: ard/sp/tr03.ard
+  method: binarc
+  source:
+  - name: 111
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 112
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 112a
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 111s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tr04.ard
+  multi:
+  - name: ard/us/tr04.ard
+  - name: ard/fr/tr04.ard
+  - name: ard/gr/tr04.ard
+  - name: ard/it/tr04.ard
+  - name: ard/sp/tr04.ard
+  method: binarc
+  source:
+  - name: 114
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 115
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 205
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tr05.ard
+  multi:
+  - name: ard/us/tr05.ard
+  - name: ard/fr/tr05.ard
+  - name: ard/gr/tr05.ard
+  - name: ard/it/tr05.ard
+  - name: ard/sp/tr05.ard
+  method: binarc
+  source:
+  - name: 113
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 116
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 117
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 206
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 206a
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tr07.ard
+  multi:
+  - name: ard/us/tr07.ard
+  - name: ard/fr/tr07.ard
+  - name: ard/gr/tr07.ard
+  - name: ard/it/tr07.ard
+  - name: ard/sp/tr07.ard
+  method: binarc
+  source:
+  - name: 208
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tr08.ard
+  multi:
+  - name: ard/us/tr08.ard
+  - name: ard/fr/tr08.ard
+  - name: ard/gr/tr08.ard
+  - name: ard/it/tr08.ard
+  - name: ard/sp/tr08.ard
+  method: binarc
+  source:
+  - name: 209
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tr09.ard
+  multi:
+  - name: ard/us/tr09.ard
+  - name: ard/fr/tr09.ard
+  - name: ard/gr/tr09.ard
+  - name: ard/it/tr09.ard
+  - name: ard/sp/tr09.ard
+  method: binarc
+  source:
+  - name: 210
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 211
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 212
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tr10.ard
+  multi:
+  - name: ard/us/tr10.ard
+  - name: ard/fr/tr10.ard
+  - name: ard/gr/tr10.ard
+  - name: ard/it/tr10.ard
+  - name: ard/sp/tr10.ard
+  method: binarc
+  source:
+  - name: 207
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt00.ard
+  multi:
+  - name: ard/us/tt00.ard
+  - name: ard/fr/tt00.ard
+  - name: ard/gr/tt00.ard
+  - name: ard/it/tt00.ard
+  - name: ard/sp/tt00.ard
+  method: binarc
+  source:
+  - name: 316
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt01.ard
+  multi:
+  - name: ard/us/tt01.ard
+  - name: ard/fr/tt01.ard
+  - name: ard/gr/tt01.ard
+  - name: ard/it/tt01.ard
+  - name: ard/sp/tt01.ard
+  method: binarc
+  source:
+  - name: 100
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 101
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 200
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 201
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 303
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 400
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 401
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 501
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 600
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 601
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 100s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 200s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 400s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 600s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt02.ard
+  multi:
+  - name: ard/us/tt02.ard
+  - name: ard/fr/tt02.ard
+  - name: ard/gr/tt02.ard
+  - name: ard/it/tt02.ard
+  - name: ard/sp/tt02.ard
+  method: binarc
+  source:
+  - name: 204
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 102
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 117
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 203
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 304
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 318
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 321
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 502
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 513
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 602
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 705
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 901
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 906
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 304s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 502v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 502s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt03.ard
+  multi:
+  - name: ard/us/tt03.ard
+  - name: ard/fr/tt03.ard
+  - name: ard/gr/tt03.ard
+  - name: ard/it/tt03.ard
+  - name: ard/sp/tt03.ard
+  method: binarc
+  source:
+  - name: 118
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 202
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 205
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 402
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 603
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 604
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 605
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 704
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt04.ard
+  multi:
+  - name: ard/us/tt04.ard
+  - name: ard/fr/tt04.ard
+  - name: ard/gr/tt04.ard
+  - name: ard/it/tt04.ard
+  - name: ard/sp/tt04.ard
+  method: binarc
+  source:
+  - name: 111
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 109
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 110a
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 110b
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 110c
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 110
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 112
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 192
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 308
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 309
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 317
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 712
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 903
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 904
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 308v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt05.ard
+  multi:
+  - name: ard/us/tt05.ard
+  - name: ard/fr/tt05.ard
+  - name: ard/gr/tt05.ard
+  - name: ard/it/tt05.ard
+  - name: ard/sp/tt05.ard
+  method: binarc
+  source:
+  - name: 403
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 404
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 405
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 406
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 407
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 408
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 409
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 410
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 411
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 492
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 412
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt06.ard
+  multi:
+  - name: ard/us/tt06.ard
+  - name: ard/fr/tt06.ard
+  - name: ard/gr/tt06.ard
+  - name: ard/it/tt06.ard
+  - name: ard/sp/tt06.ard
+  method: binarc
+  source:
+  - name: 206
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 261a
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 252a
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 252b
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 252c
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 251a
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 251b
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 251c
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 253a
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 253b
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 253c
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 305
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 320
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 206v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 206s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt07.ard
+  multi:
+  - name: ard/us/tt07.ard
+  - name: ard/fr/tt07.ard
+  - name: ard/gr/tt07.ard
+  - name: ard/it/tt07.ard
+  - name: ard/sp/tt07.ard
+  method: binarc
+  source:
+  - name: 104
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 106
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 108
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 103
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 105
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 107
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 261b
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 256a
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 256b
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 256c
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 255a
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 255b
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 255c
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 254a
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 254b
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 254c
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 306
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 902
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt08.ard
+  multi:
+  - name: ard/us/tt08.ard
+  - name: ard/fr/tt08.ard
+  - name: ard/gr/tt08.ard
+  - name: ard/it/tt08.ard
+  - name: ard/sp/tt08.ard
+  method: binarc
+  source:
+  - name: 207b
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 207c
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 277
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 287
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 297
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 208
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 210
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 413
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 414
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 509
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 514
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 706
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 707
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 905
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 907
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 053
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 277v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt09.ard
+  multi:
+  - name: ard/us/tt09.ard
+  - name: ard/fr/tt09.ard
+  - name: ard/gr/tt09.ard
+  - name: ard/it/tt09.ard
+  - name: ard/sp/tt09.ard
+  method: binarc
+  source:
+  - name: 209
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 503
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 701
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 708
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 709
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 710
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 001
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt10.ard
+  multi:
+  - name: ard/us/tt10.ard
+  - name: ard/fr/tt10.ard
+  - name: ard/gr/tt10.ard
+  - name: ard/it/tt10.ard
+  - name: ard/sp/tt10.ard
+  method: binarc
+  source:
+  - name: 522
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 524
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 532
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 534
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 506
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt11.ard
+  multi:
+  - name: ard/us/tt11.ard
+  - name: ard/fr/tt11.ard
+  - name: ard/gr/tt11.ard
+  - name: ard/it/tt11.ard
+  - name: ard/sp/tt11.ard
+  method: binarc
+  source:
+  - name: 505
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 508
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 505s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt12.ard
+  multi:
+  - name: ard/us/tt12.ard
+  - name: ard/fr/tt12.ard
+  - name: ard/gr/tt12.ard
+  - name: ard/it/tt12.ard
+  - name: ard/sp/tt12.ard
+  method: binarc
+  source:
+  - name: 521
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 531
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 507
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 052
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt13.ard
+  multi:
+  - name: ard/us/tt13.ard
+  - name: ard/fr/tt13.ard
+  - name: ard/gr/tt13.ard
+  - name: ard/it/tt13.ard
+  - name: ard/sp/tt13.ard
+  method: binarc
+  source:
+  - name: 113
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 307
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt14.ard
+  multi:
+  - name: ard/us/tt14.ard
+  - name: ard/fr/tt14.ard
+  - name: ard/gr/tt14.ard
+  - name: ard/it/tt14.ard
+  - name: ard/sp/tt14.ard
+  method: binarc
+  source:
+  - name: 114
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 115
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 116
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 510
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 512
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 606
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 002
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 003
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 051
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 115v
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 004s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt15.ard
+  multi:
+  - name: ard/us/tt15.ard
+  - name: ard/fr/tt15.ard
+  - name: ard/gr/tt15.ard
+  - name: ard/it/tt15.ard
+  - name: ard/sp/tt15.ard
+  method: binarc
+  source:
+  - name: 004
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt16.ard
+  multi:
+  - name: ard/us/tt16.ard
+  - name: ard/fr/tt16.ard
+  - name: ard/gr/tt16.ard
+  - name: ard/it/tt16.ard
+  - name: ard/sp/tt16.ard
+  method: binarc
+  source:
+  - name: 515
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt17.ard
+  multi:
+  - name: ard/us/tt17.ard
+  - name: ard/fr/tt17.ard
+  - name: ard/gr/tt17.ard
+  - name: ard/it/tt17.ard
+  - name: ard/sp/tt17.ard
+  method: binarc
+  source:
+  - name: 609
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt18.ard
+  multi:
+  - name: ard/us/tt18.ard
+  - name: ard/fr/tt18.ard
+  - name: ard/gr/tt18.ard
+  - name: ard/it/tt18.ard
+  - name: ard/sp/tt18.ard
+  method: binarc
+  source:
+  - name: 511
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 607
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 608
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt19.ard
+  multi:
+  - name: ard/us/tt19.ard
+  - name: ard/fr/tt19.ard
+  - name: ard/gr/tt19.ard
+  - name: ard/it/tt19.ard
+  - name: ard/sp/tt19.ard
+  method: binarc
+  source:
+  - name: 612
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 613
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 614
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 615
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 009
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt20.ard
+  multi:
+  - name: ard/us/tt20.ard
+  - name: ard/fr/tt20.ard
+  - name: ard/gr/tt20.ard
+  - name: ard/it/tt20.ard
+  - name: ard/sp/tt20.ard
+  method: binarc
+  source:
+  - name: 071
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 072
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt21.ard
+  multi:
+  - name: ard/us/tt21.ard
+  - name: ard/fr/tt21.ard
+  - name: ard/gr/tt21.ard
+  - name: ard/it/tt21.ard
+  - name: ard/sp/tt21.ard
+  method: binarc
+  source:
+  - name: 119
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 211
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 300
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 301
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 319
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 415
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 610
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 611
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 005
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 006
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 007
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 008
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 300s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt22.ard
+  multi:
+  - name: ard/us/tt22.ard
+  - name: ard/fr/tt22.ard
+  - name: ard/gr/tt22.ard
+  - name: ard/it/tt22.ard
+  - name: ard/sp/tt22.ard
+  method: binarc
+  source:
+  - name: 616
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt23.ard
+  multi:
+  - name: ard/us/tt23.ard
+  - name: ard/fr/tt23.ard
+  - name: ard/gr/tt23.ard
+  - name: ard/it/tt23.ard
+  - name: ard/sp/tt23.ard
+  method: binarc
+  source:
+  - name: 302
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 617
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 618
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 702
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt24.ard
+  multi:
+  - name: ard/us/tt24.ard
+  - name: ard/fr/tt24.ard
+  - name: ard/gr/tt24.ard
+  - name: ard/it/tt24.ard
+  - name: ard/sp/tt24.ard
+  method: binarc
+  source:
+  - name: 504
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt25.ard
+  multi:
+  - name: ard/us/tt25.ard
+  - name: ard/fr/tt25.ard
+  - name: ard/gr/tt25.ard
+  - name: ard/it/tt25.ard
+  - name: ard/sp/tt25.ard
+  method: binarc
+  source:
+  - name: 801
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 802
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 803
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt27.ard
+  multi:
+  - name: ard/us/tt27.ard
+  - name: ard/fr/tt27.ard
+  - name: ard/gr/tt27.ard
+  - name: ard/it/tt27.ard
+  - name: ard/sp/tt27.ard
+  method: binarc
+  source:
+  - name: 805
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 806
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 809
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 812a
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 812b
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 812c
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt28.ard
+  multi:
+  - name: ard/us/tt28.ard
+  - name: ard/fr/tt28.ard
+  - name: ard/gr/tt28.ard
+  - name: ard/it/tt28.ard
+  - name: ard/sp/tt28.ard
+  method: binarc
+  source:
+  - name: 807
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 808
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 091
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 810
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt29.ard
+  multi:
+  - name: ard/us/tt29.ard
+  - name: ard/fr/tt29.ard
+  - name: ard/gr/tt29.ard
+  - name: ard/it/tt29.ard
+  - name: ard/sp/tt29.ard
+  method: binarc
+  source:
+  - name: 811
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt30.ard
+  multi:
+  - name: ard/us/tt30.ard
+  - name: ard/fr/tt30.ard
+  - name: ard/gr/tt30.ard
+  - name: ard/it/tt30.ard
+  - name: ard/sp/tt30.ard
+  method: binarc
+  source:
+  - name: 804
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt32.ard
+  multi:
+  - name: ard/us/tt32.ard
+  - name: ard/fr/tt32.ard
+  - name: ard/gr/tt32.ard
+  - name: ard/it/tt32.ard
+  - name: ard/sp/tt32.ard
+  method: binarc
+  source:
+  - name: 313
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 310
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 311a
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 311b
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 311c
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 311
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 312
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt34.ard
+  multi:
+  - name: ard/us/tt34.ard
+  - name: ard/fr/tt34.ard
+  - name: ard/gr/tt34.ard
+  - name: ard/it/tt34.ard
+  - name: ard/sp/tt34.ard
+  method: binarc
+  source:
+  - name: 314
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 315
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt35.ard
+  multi:
+  - name: ard/us/tt35.ard
+  - name: ard/fr/tt35.ard
+  - name: ard/gr/tt35.ard
+  - name: ard/it/tt35.ard
+  - name: ard/sp/tt35.ard
+  method: binarc
+  source:
+  - name: 711
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt36.ard
+  multi:
+  - name: ard/us/tt36.ard
+  - name: ard/fr/tt36.ard
+  - name: ard/gr/tt36.ard
+  - name: ard/it/tt36.ard
+  - name: ard/sp/tt36.ard
+  method: binarc
+  source:
+  - name: 523
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 533
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/tt40.ard
+  multi:
+  - name: ard/us/tt40.ard
+  - name: ard/fr/tt40.ard
+  - name: ard/gr/tt40.ard
+  - name: ard/it/tt40.ard
+  - name: ard/sp/tt40.ard
+  method: binarc
+  source:
+  - name: 908
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 010
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 011
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 012
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 013
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/wi00.ard
+  multi:
+  - name: ard/us/wi00.ard
+  - name: ard/fr/wi00.ard
+  - name: ard/gr/wi00.ard
+  - name: ard/it/wi00.ard
+  - name: ard/sp/wi00.ard
+  method: binarc
+  source:
+  - name: 101
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 104
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 113
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 114
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 115
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 116
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 122
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 113s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 114s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 115s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/wi01.ard
+  multi:
+  - name: ard/us/wi01.ard
+  - name: ard/fr/wi01.ard
+  - name: ard/gr/wi01.ard
+  - name: ard/it/wi01.ard
+  - name: ard/sp/wi01.ard
+  method: binarc
+  source:
+  - name: 102
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 103
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 104s
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/wi02.ard
+  multi:
+  - name: ard/us/wi02.ard
+  - name: ard/fr/wi02.ard
+  - name: ard/gr/wi02.ard
+  - name: ard/it/wi02.ard
+  - name: ard/sp/wi02.ard
+  method: binarc
+  source:
+  - name: 117
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 118
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 121
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/wi03.ard
+  multi:
+  - name: ard/us/wi03.ard
+  - name: ard/fr/wi03.ard
+  - name: ard/gr/wi03.ard
+  - name: ard/it/wi03.ard
+  - name: ard/sp/wi03.ard
+  method: binarc
+  source:
+  - name: 119
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 120
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/wi04.ard
+  multi:
+  - name: ard/us/wi04.ard
+  - name: ard/fr/wi04.ard
+  - name: ard/gr/wi04.ard
+  - name: ard/it/wi04.ard
+  - name: ard/sp/wi04.ard
+  method: binarc
+  source:
+  - name: 109
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 129
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 110
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/wi05.ard
+  multi:
+  - name: ard/us/wi05.ard
+  - name: ard/fr/wi05.ard
+  - name: ard/gr/wi05.ard
+  - name: ard/it/wi05.ard
+  - name: ard/sp/wi05.ard
+  method: binarc
+  source:
+  - name: 111
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 130
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 112
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/wi06.ard
+  multi:
+  - name: ard/us/wi06.ard
+  - name: ard/fr/wi06.ard
+  - name: ard/gr/wi06.ard
+  - name: ard/it/wi06.ard
+  - name: ard/sp/wi06.ard
+  method: binarc
+  source:
+  - name: 107
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 128
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 108
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/wi07.ard
+  multi:
+  - name: ard/us/wi07.ard
+  - name: ard/fr/wi07.ard
+  - name: ard/gr/wi07.ard
+  - name: ard/it/wi07.ard
+  - name: ard/sp/wi07.ard
+  method: binarc
+  source:
+  - name: 105
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 127
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 106
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+- name: ard/wi08.ard
+  multi:
+  - name: ard/us/wi08.ard
+  - name: ard/fr/wi08.ard
+  - name: ard/gr/wi08.ard
+  - name: ard/it/wi08.ard
+  - name: ard/sp/wi08.ard
+  method: binarc
+  source:
+  - name: 123
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 124
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 125
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
+  - name: 126
+    type: event
+    method: copy
+    source:
+    - name: 0000.bin
