@@ -57,9 +57,9 @@ function _OnFrame()
 	    WriteByte(Slot1+0x1B0,100) --Starting Drive %
 	    WriteByte(Slot1+0x1B1,3)   --Starting Drive Current
 	    WriteByte(Slot1+0x1B2,3)   --Starting Drive Max
-		if toggleDriveCount then
-			WriteByte(Slot1+0x1B1,originalDrive)   --Starting Drive Current
-	    	WriteByte(Slot1+0x1B2,originalDrive)   --Starting Drive Max
-		end
+		--if toggleDriveCount then
+		--	WriteByte(Slot1+0x1B1,originalDrive)   --Starting Drive Current
+	    --	WriteByte(Slot1+0x1B2,originalDrive)   --Starting Drive Max
+		--end
     end
 end
