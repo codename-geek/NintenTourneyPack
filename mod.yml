@@ -1,5 +1,5 @@
-title: Ninten Tourney Pack v1.6
-description: Combines PS2 Duck Flare mod and Cutscene Skipper from Num. Force Starts 3-Drive. Includes lua scripts to unequip all Berserk Charges and both Negative Combos if 2 are equipped.
+title: Ninten Tourney Pack v1.7
+description: Combines PS2 Duck Flare mod and Cutscene Skipper from Num. Includes 3 Drive Start - Press L1 + R1 to toggle between 3 & 5 in the Dream Weapon room. Includes lua scripts to force unequip Berserk Charges and both Negative Combos if 2 are equipped.
 assets:
 # 3 Drive Lua Script and Remove Berserk/Double Neg Lua
 - name: scripts/z3-Drive-Mod.lua

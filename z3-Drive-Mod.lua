@@ -1,6 +1,6 @@
 LUAGUI_NAME = 'GoA ROM 3 Drive Mod'
 LUAGUI_AUTH = 'Codename_Geek'
-LUAGUI_DESC = 'A lua mod to use in conjunction with the GoA. Forces 3 Drive start unless R1 is held during Dream Weapon Selection.'
+LUAGUI_DESC = 'A lua mod to use in conjunction with the GoA. Toggle between 3 Drive and GoA\'s original Drive by pressing L1 + R1 together.'
 
 function _OnInit()
 	print('3 Drive GoA Mod')
@@ -34,32 +34,33 @@ function _OnFrame()
 	Btl    = ReadShort(Now+0x06)
 	Evt    = ReadShort(Now+0x08)
 
-	--record last input for toggle
-	local input = ReadInt(0x29F89B0 - 0x56450E)
-	if input ~= lastInput then
-		lastInput = input
-		if input ~= 0 then
-			lastNewInput = input
-			--ConsolePrint(lastNewInput)
-			if lastNewInput & 2048 == 2048 then
-				toggleDriveCount = not toggleDriveCount
-			end
-		end
-	end
-
 	if Place == 0x2002 and Events(0x01,Null,0x01) then --Station of Serenity Weapons
 		--Get the drive count the Original GoA starts with. Done so it's compatible with 0 drive start GoA
 		if originalDrive == -1 then
 			originalDrive = ReadByte(Slot1+0x1B2)
 			ConsolePrint(originalDrive)
 		end
+
+		--record last input for toggle
+		local input = ReadInt(0x29F89B0 - 0x56450E)
+		if input ~= lastInput then
+			lastInput = input
+			if input ~= 0 then
+				lastNewInput = input
+				--ConsolePrint(lastNewInput)
+				if lastNewInput & 8390656 == 8390656 then
+					toggleDriveCount = not toggleDriveCount
+				end
+			end
+		end
+
 		--Starting Drive
 	    WriteByte(Slot1+0x1B0,100) --Starting Drive %
 	    WriteByte(Slot1+0x1B1,3)   --Starting Drive Current
 	    WriteByte(Slot1+0x1B2,3)   --Starting Drive Max
-		--if toggleDriveCount then
-		--	WriteByte(Slot1+0x1B1,originalDrive)   --Starting Drive Current
-	    --	WriteByte(Slot1+0x1B2,originalDrive)   --Starting Drive Max
-		--end
+		if toggleDriveCount then
+			WriteByte(Slot1+0x1B1,originalDrive)   --Starting Drive Current
+	    	WriteByte(Slot1+0x1B2,originalDrive)   --Starting Drive Max
+		end
     end
 end
